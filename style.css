@@ -28,15 +28,96 @@ body::before {
 }
 
 /* --- NAVIGATION --- */
+/* --- NAVIGATION & MOBILE MENU --- */
 nav { 
-    width: 100%; position: absolute; top: 0; padding: 30px 10%; 
-    display: flex; justify-content: space-between; align-items: center; z-index: 100; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    padding: 30px 10%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    z-index: 100; 
 }
-.logo { font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+
+.logo { 
+    font-weight: 800; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    color: var(--text); 
+    z-index: 101; /* Stay above mobile menu */
+}
+
 .logo span { color: var(--accent); }
-.nav-links a { color: var(--text-dim); text-decoration: none; margin-left: 30px; font-size: 0.9rem; transition: 0.3s; }
+
+.nav-links a { 
+    color: var(--text-dim); 
+    text-decoration: none; 
+    margin-left: 30px; 
+    font-size: 0.9rem; 
+    transition: 0.3s ease; 
+}
+
 .nav-links a:hover { color: var(--accent); }
 
+/* --- HAMBURGER ICON --- */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--text);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    .menu-toggle { display: flex; }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        width: 100%;
+        height: 100vh;
+        background: rgba(3, 3, 3, 0.98); /* Solid dark background */
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide in */
+    }
+
+    .nav-links a {
+        margin: 20px 0;
+        font-size: 1.5rem;
+        color: var(--text);
+    }
+
+    /* Animated Hamburger to "X" */
+    #mobile-menu.is-active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    #mobile-menu.is-active span:nth-child(2) { opacity: 0; }
+    #mobile-menu.is-active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Layout stack fixes */
+    .bento-grid, .pricing-grid, .contact-container, .footer-content { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+    .hero-actions { flex-direction: column; align-items: center; }
+}
 /* --- HERO SECTION --- */
 .hero { 
     height: 100vh; display: flex; flex-direction: column; 
