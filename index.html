@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Full-Stack | MDS Studio Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="opacity: 0;"> 
+    <header class="hero">
+        <div class="orb"></div>
+        <nav>
+            <div class="logo">MAAZ<span>STUDIO</span></div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="reveal">Build <span>Systems</span>,<br>Not Components.</h1>
+            <p class="reveal-sub">The ultimate high-performance UI framework for elite developers. Powered by GSAP and Obsidian Design.</p>
+            <div class="hero-actions">
+                <button class="btn-purple">Get the Bundle — $49</button>
+                <button class="btn-outline">Documentation</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="bento-container">
+        <div class="section-header">
+            <h2 class="reveal">Engineered for <span>Performance</span></h2>
+            <p>Advanced tools designed to elevate your development workflow and user experience.</p>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-item tall reveal-card hover-lift">
+                <i class="fas fa-bolt"></i>
+                <h3>Cinematic Motion</h3>
+                <p>Pre-configured GSAP sequences for a "Senior-Level" feel.</p>
+            </div>
+            <div class="bento-item wide reveal-card hover-lift">
+                <i class="fas fa-chart-line"></i>
+                <h3>Obsidian Analytics</h3>
+                <p>Integrated Chart.js engine with custom luxury gradients.</p>
+            </div>
+            <div class="bento-item reveal-card hover-lift">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive</h3>
+                <p>Mobile-first architecture with custom navigation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-header">
+            <h2 class="reveal">Choose Your <span>License</span></h2>
+            <p>One-time payment. Lifetime updates for MDS Studio assets.</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card reveal-card hover-glow">
+                <span class="tier">Personal</span>
+                <h2 class="price">$29</h2>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Obsidian OS Dashboard</li>
+                    <li><i class="fas fa-check"></i> Standard CSS Theme</li>
+                    <li><i class="fas fa-times"></i> Landing Page Template</li>
+                </ul>
+                <button class="btn-glass">Buy Personal</button>
+            </div>
+
+            <div class="pricing-card featured reveal-card hover-glow">
+                <div class="badge">Best Value</div>
+                <span class="tier">Full Studio Bundle</span>
+                <h2 class="price">$49</h2>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Obsidian OS Dashboard</li>
+                    <li><i class="fas fa-check"></i> Obsidian Landing Page</li>
+                    <li><i class="fas fa-check"></i> GSAP Source Code</li>
+                    <li><i class="fas fa-check"></i> Commercial License</li>
+                </ul>
+                <button class="btn-purple">Buy Full Bundle</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-preview">
+        <div class="preview-label">Live Preview: Obsidian OS v1.0</div>
+        <div class="dashboard-container magnetic-card">
+            <aside class="sidebar">
+                <div class="side-icon active"><i class="fas fa-th-large"></i></div>
+                <div class="side-icon"><i class="fas fa-wallet"></i></div>
+                <div class="side-icon"><i class="fas fa-cog"></i></div>
+            </aside>
+            <main class="workspace">
+                <header class="dash-header">
+                    <h2>Revenue Insights</h2>
+                    <div class="user-pill">Maaz Aamir</div>
+                </header>
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span>Total Revenue</span>
+                        <h3>$12,840</h3>
+                        <p class="up">+12.5%</p>
+                    </div>
+                    <div class="stat-card">
+                        <span>Active Users</span>
+                        <h3>1,205</h3>
+                        <p class="up">+5.2%</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="reveal-type">Let's build <span>something elite.</span></h2>
+                <p>Currently accepting new projects for Q2 2026. Reach out to discuss your vision.</p>
+                <div class="contact-methods">
+                    <div class="method-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@maazdev.studio</span>
+                    </div>
+                    <div class="method-item">
+                        <i class="fab fa-pinterest"></i>
+                        <span>@MaazDevStudio</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell me about your project" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn-purple">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">MAAZ<span>STUDIO</span></div>
+                <p>Crafting high-end digital experiences with cinematic motion and elite UI design.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Free Templates</a></li>
+                        <li><a href="#">UI Inspiration</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maaz Dev Studio. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
