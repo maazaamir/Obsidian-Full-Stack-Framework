@@ -68,20 +68,20 @@ window.addEventListener('load', () => {
     }
 
     // PRICING GRID REVEAL
-    if (document.querySelector(".pricing-grid")) {
-        gsap.from(".pricing-card", {
-            scrollTrigger: {
-                trigger: ".pricing-grid",
-                start: "top 90%",
-                toggleActions: "play none none none"
-            },
-            scale: 0.9,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "back.out(1.4)"
-        });
-    }
+    // if (document.querySelector(".pricing-grid")) {
+    //     gsap.from(".pricing-card", {
+    //         scrollTrigger: {
+    //             trigger: ".pricing-grid",
+    //             start: "top 90%",
+    //             toggleActions: "play none none none"
+    //         },
+    //         scale: 0.9,
+    //         opacity: 0,
+    //         duration: 0.8,
+    //         stagger: 0.2,
+    //         ease: "back.out(1.4)"
+    //     });
+    // }
 
     // CONTACT SECTION REVEAL
     if (document.querySelector(".contact-section")) {
