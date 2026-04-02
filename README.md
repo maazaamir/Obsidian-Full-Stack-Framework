@@ -15,3 +15,12 @@ Obsidian OS is a premium UI framework and dashboard kit built by Maaz Dev Studio
 📱 Ultra Responsive: Mobile-first navigation and layout optimized for all devices.
 
 🎨 CSS Variables: Easily swap the --accent color to match your brand in seconds.
+
+🛠 Tech Stack
+Language: HTML5, CSS3 (Modern Variables)
+
+Animations: GSAP (ScrollTrigger)
+
+Charts: Chart.js
+
+Icons: FontAwesome 6.4
