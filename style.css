@@ -242,3 +242,65 @@ button, .btn-purple, .btn-outline, .btn-glass {
     .pricing-card.featured { transform: scale(1); }
     .footer-links { justify-content: center; flex-wrap: wrap; }
 }
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6); /* Muted white */
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+}
+
+.social-icons a:hover {
+    color: #bc9cff; /* Your Obsidian Purple */
+    background: rgba(188, 156, 255, 0.1);
+    border-color: #bc9cff;
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(188, 156, 255, 0.2);
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+/* Subtle Underline Animation */
+.social-icons a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #bc9cff;
+    transition: width 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.social-icons a:hover::after {
+    width: 100%;
+}

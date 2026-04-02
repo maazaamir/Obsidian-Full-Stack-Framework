@@ -172,3 +172,32 @@ if (chartCanvas) {
         }
     });
 }
+// Target all social links
+const icons = document.querySelectorAll('.social-icons a');
+
+icons.forEach(icon => {
+    icon.addEventListener('mousemove', (e) => {
+        const { offsetX, offsetY, target } = e;
+        const { clientWidth, clientHeight } = target;
+        
+        // Calculate the pull strength
+        const x = (offsetX - clientWidth / 2) / 2;
+        const y = (offsetY - clientHeight / 2) / 2;
+
+        gsap.to(icon, {
+            x: x,
+            y: y,
+            duration: 0.3,
+            ease: "power2.out"
+        });
+    });
+
+    icon.addEventListener('mouseleave', () => {
+        gsap.to(icon, {
+            x: 0,
+            y: 0,
+            duration: 0.5,
+            ease: "elastic.out(1, 0.3)"
+        });
+    });
+});
