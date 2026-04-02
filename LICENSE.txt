@@ -1,0 +1,28 @@
+📄 MAAZ DEV STUDIO | OBSIDIAN OS LICENSE
+Product: Obsidian OS Dashboard & UI Kit
+
+Author: Maaz Aamir (MDS Studio)
+
+Date: April 2026
+
+1. GRANT OF LICENSE
+By downloading this source code, Maaz Dev Studio (MDS) grants you a non-exclusive, non-transferable license to use, modify, and integrate this software into your personal and commercial projects.
+
+2. PERMITTED USES ✅
+Use the code to build personal portfolios or experimental projects.
+
+Use the code to build websites for your own high-paying clients.
+
+Modify the CSS, GSAP animations, and HTML structure to fit your brand.
+
+3. RESTRICTIONS ❌
+No Redistribution: You may not sub-license, redistribute, or resell this source code "as-is" or as a "template" on any marketplace (e.g., ThemeForest, Gumroad, Etsy).
+
+No Open Sourcing: You may not upload the full raw source code to public GitHub repositories without significant modifications.
+
+Credit Retention: While not required on client sites, keeping the "Built by MDS" comment in the index.html source code is greatly appreciated to support the studio.
+
+4. LIMITATION OF LIABILITY
+The software is provided "as is," without warranty of any kind. In no event shall Maaz Aamir or MDS be liable for any claim, damages, or other liability arising from the use of this software.
+
+Built with Precision by Maaz Dev Studio. For support or custom inquiries: hello@maazdev.studio Follow for updates: [https://in.pinterest.com/maazdevstudio/]
